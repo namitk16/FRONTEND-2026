@@ -7,7 +7,7 @@
     
 </head>
 <body style="background-color: burlywood;">
-   <br><center><h1 id="m"></h1></center>
+   
        <center><h1 id="n"></h1></center>
        <hr style="background-color: rgb(250, 245, 245);">
        <center><h5 id="h"></h5></center>
@@ -40,8 +40,50 @@
         }
         else {
             alert("Your Birthday Month Is " + month);
-            document.getElementById("m").innerHTML = `YOUR BIRTHDAY MONTH IS ${month}`;
         }
+
+        let monthname = month;
+
+        if (monthname === 0){
+            monthname = "You Have Entered The Wrong Input";
+        }
+        else if (monthname === 1){
+            monthname = "JANUARY";
+        }
+        else if (monthname === 2){
+            monthname = "FEBRUARY";
+        }
+        else if (monthname === 3){
+            monthname = "MARCH";
+        }
+        else if (monthname === 4){
+            monthname = "APRIL";
+        }
+        else if (monthname === 5){
+            monthname = "MAY";
+        }
+        else if (monthname === 6){
+            monthname = "JUNE";
+        }
+        else if (monthname === 7){
+            monthname = "JULY";
+        }
+        else if (monthname === 8){
+            monthname = "AUGUST";
+        }
+        else if (monthname === 9){
+            monthname = "SEPTEMBER";
+        }
+        else if (monthname === 10){
+            monthname = "OCTOBER";
+        }
+        else if (monthname === 11){
+            monthname = "NOVEMBER";
+        }
+        else if (monthname === 12){
+            monthname = "DECEMBER";
+        }
+        else("You Have Entered The Wrong Input");
 
         alert("NOW LET'S GUESS YOUR DATE OF BIRTH !! ");
         let set5 = confirm("Is Your Birthday Comes In These Dates 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31 ?");
@@ -74,7 +116,7 @@
 
         else {
             alert("Your Birthday Date Is " + date);
-            document.getElementById("n").innerHTML = `AND YOUR DATE OF BIRTH IS ${date}`;
+            document.getElementById("n").innerHTML = `YOUR BIRTHDAY MONTH IS ${monthname}  AND  YOUR DATE OF BIRTH IS ${date}`;
             document.getElementById("h").innerHTML = `THANK YOU FOR PLAYING THE GAME 😊`;
             alert("NOTE: IF YOU HAVE ENTERED THE WRONG INPUT THEN PLEASE RELOAD THE PAGE AND TRY AGAIN");
             
